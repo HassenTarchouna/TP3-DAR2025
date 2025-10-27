@@ -2,15 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="77b3bd93-0ce8-4fd1-b27f-089e0761c563" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ClientPackage/Client.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ServerPackage/ClientHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ServerPackage/Server.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TPDAR3.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ClientPackage/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/ClientPackage/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ServerPackage/ClientHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/ServerPackage/ClientHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ServerPackage/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/ServerPackage/Server.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,6 +16,13 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="hacentarchouna@gmail.com &lt;hassentarchouna&gt;" />
       </list>
     </option>
   </component>
@@ -80,11 +82,23 @@
       <option name="presentableId" value="Default" />
       <updated>1760945984340</updated>
       <workItem from="1760945985820" duration="3979000" />
-      <workItem from="1761549965671" duration="850000" />
+      <workItem from="1761549965671" duration="1516000" />
     </task>
+    <task id="LOCAL-00001" summary="activité1(communication multi-client)">
+      <created>1761550943009</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1761550943009</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="activité1(communication multi-client)" />
+    <option name="LAST_COMMIT_MESSAGE" value="activité1(communication multi-client)" />
   </component>
 </project>

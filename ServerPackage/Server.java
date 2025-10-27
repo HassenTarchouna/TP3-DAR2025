@@ -1,33 +1,31 @@
 package ServerPackage;
 
-
 import java.io.*;
 import java.net.*;
+import java.util.concurrent.atomic.AtomicInteger;
 
 public class Server {
-    private static int clientCount = 0;
+    private static final int PORT = 1234;
+    private static AtomicInteger clientCount = new AtomicInteger(0);
 
     public static void main(String[] args) {
-        int port = 1234;
-
-        try (ServerSocket serverSocket = new ServerSocket(port)) {
-            System.out.println("Serveur démarré sur le port " + port);
+        try (ServerSocket serverSocket = new ServerSocket(PORT)) {
+            System.out.println("Server started on port " + PORT);
 
             while (true) {
-                Socket clientSocket = serverSocket.accept(); // accepte une connexion
-                clientCount++;
+                Socket clientSocket = serverSocket.accept();
 
-                System.out.println("Nouveau client connecté : " +
-                        clientSocket.getRemoteSocketAddress() +
-                        " | Client n°" + clientCount);
+                int clientId = clientCount.incrementAndGet();
+                System.out.println("New client connected: " + clientSocket.getRemoteSocketAddress());
+                System.out.println("Client number: " + clientId);
 
-                // Crée un thread pour gérer ce client
-                new Thread(new ClientHandler(clientSocket, clientCount)).start();
+                // Create a thread for this client
+                Thread clientThread = new Thread(new ClientHandler(clientSocket, clientId));
+                clientThread.start();
             }
+
         } catch (IOException e) {
-            System.err.println("Erreur du serveur : " + e.getMessage());
+            e.printStackTrace();
         }
     }
 }
-
-
